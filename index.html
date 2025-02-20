@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia Art Festas</title>
+    
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js" defer></script>
+    <!-- Fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="logo"><img src="images/logolia.png" alt="Logo" srcset=""></div>
+            <ul class="menu">
+                <li><a href="index.html">início</a></li>
+                <li><a href="pages/about.html">sobre</a></li>
+                <li><a href="pages/services.html">serviços</a></li>
+                <li><a href="pages/contact.html">contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div>
+                <h1 class="custom-title">
+                    <span class="left">Personalize,</span>
+                    <span class="center">Supreenda</span>
+                    <span class="right">e Encante!</span>
+                </h1>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <img src="images/geral.jpg" alt="Imagem 1">
+                    <div class="btn-container">
+                      <a href="https://exemplo.com/1" class="btn">Saiba Mais</a>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <img src="images/decoracao.jpg" alt="Imagem 2">
+                    <div class="btn-container">
+                      <a href="https://exemplo.com/2" class="btn">Saiba Mais</a>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <img src="images/balao.jpg" alt="Imagem 3">
+                    <div class="btn-container">
+                      <a href="https://exemplo.com/3" class="btn">Saiba Mais</a>
+                    </div>
+                  </div>
+                  <!-- Slide 4 -->
+                  <div class="swiper-slide">
+                    <img src="images/cama.jpg" alt="Imagem 4">
+                    <div class="btn-container">
+                      <a href="https://exemplo.com/4" class="btn">Saiba Mais</a>
+                    </div>
+                  </div>
+                  <!-- Slide 5 -->
+                  <div class="swiper-slide">
+                    <img src="images/cesta.jpg" alt="Imagem 5">
+                    <div class="btn-container">
+                      <a href="https://exemplo.com/5" class="btn">Saiba Mais</a>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+        <section class="about-us">
+            <h2>Sobre nós</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolores quasi sequi. Id ipsa rerum perspiciatis illo enim? Harum incidunt debitis vitae, exercitationem est suscipit qui praesentium dignissimos quis saepe?</p>
+            <button class="btn-primary">Saiba mais</button>
+        </section>
+
+        <section class="services">
+            <h2>Serviços</h2>
+            <hr>
+            <article class="service-item">
+                <img src="#" alt="decorações de festas com bastante enfeite">
+                <h3>Decorações para Festas</h3>
+                <p>Ambientes incríveis para momentos inesquecíveis!</p>
+                <button class="btn-secondary">Saiba mais</button>
+            </article>
+            <article class="service-item">
+                <img src="#" alt="foto de balões coloridos decorando o local">
+                <h3>Balões Personalizados</h3>
+                <p>Transforme qualquer ocasião com cores e criatividade!</p>
+                <button class="btn-secondary">Saiba mais</button>
+            </article>
+            <article class="service-item">
+                <img src="#" alt="foto de brinquedos para festas,(cama-elástica, casinha de boliha)">
+                <h3>Brinquedos para Festas</h3>
+                <p>Diversão garantida para todas as idades!</p>
+                <button class="btn-secondary">Saiba mais</button>
+            </article>
+            <article class="service-item">
+                <img src="#" alt="foto de cesta personalizadas para presentes, cheia de coisas dentro">
+                <h3>Cestas Personalizadas</h3>
+                <p>Presenteie com carinho, monte do seu jeito!</p>
+                <button class="btn-secondary">Saiba mais</button>
+            </article>
+        </section>
+        
+        <section class="contact-us">
+            <div>
+                <h2>Entre em contato</h2>
+                <hr>
+                <p>Precisa de algo especial?
+                <br>Chame a gente no WhatsApp!</p>
+                <button class="whats" aria-label="Fale conosco no WhatsApp">WhatsApp</button>
+            </div>
+            <div>
+                <h2>Redes Sociais</h2>
+                <hr>
+                <p>Acompanhe nossas novidades e inspirações!</p>
+                <div class="media-icon">
+                    <a href=""><img src="#" alt="ícone do Facebook" aria-label="Nos acompanhe no Facebook"></a>
+                    <a href=""><img src="#" alt="ícone do Instagram" aria-label="Nos acompanhe no Instagram"></a>
+                </div>
+            </div>
+        </section>
+          
+    </main>
+
+    <footer>
+        <h4>© Todos os direitos reservados. Lia Art Festas 2024
+            Criação de Sites by <a href="https://www.linkedin.com/in/auyber-genesini-moura-58b258144/" aria-label="Entre em contato com o criador do site através do Linkedin">Auyber Genesini Moura</a>.</h4>
+    </footer>
+
+
+</body>
+</html>
