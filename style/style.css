@@ -56,7 +56,8 @@ body {
 .logo img {
     height: 70px;
     width: 70px;
-    margin: 5px 05;
+    margin: 5px;
+
 }
 
 .menu {
@@ -313,5 +314,23 @@ footer a {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        background-color: var(--secondary);
+    }
     
+    .navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .custom-title {
+        max-width:1000px;
+        margin: 18px auto;
+        font-size: 48px;
+    }
+
+    .swiper {
+        max-width: 1000px;
+        height: 70vh;
+    }
 }
