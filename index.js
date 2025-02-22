@@ -1,20 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1, // Uma imagem por vez
-      spaceBetween: 10, // Espaço entre imagens
-      loop: true, // Faz o carrossel reiniciar ao chegar no fim
+  // Inicializa o Swiper da Home
+  new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
       },
       pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+          el: ".swiper-pagination",
+          clickable: true,
       },
       autoplay: {
-        delay: 3000, // Tempo entre os slides (3s)
-        disableOnInteraction: false, // Continua mesmo se o usuário interagir
+          delay: 3000,
+          disableOnInteraction: false,
       },
-    });
   });
-  
+
+  // Inicializa todos os Swipers da seção de serviços
+  document.querySelectorAll(".mySwiperServices").forEach(swiperContainer => {
+      new Swiper(swiperContainer, {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          navigation: {
+              nextEl: swiperContainer.querySelector(".swiper-button-next"),
+              prevEl: swiperContainer.querySelector(".swiper-button-prev"),
+          },
+          pagination: {
+              el: swiperContainer.querySelector(".swiper-pagination"),
+              clickable: true,
+          },
+          autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+          },
+      });
+  });
+});

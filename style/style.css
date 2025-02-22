@@ -1,3 +1,5 @@
+/* RESET, VARIÁVEIS E ESTILOS GLOBAIS */
+
 .playfair-display {
     font-family: "Playfair Display", serif;
     font-weight: 400;
@@ -39,11 +41,15 @@
     --margin: 18px;
 }
 
+/* PÁGINA HOME */
+
 body {
     font-family: var(--font-primary);
     font-weight: normal;
     color: var(--dark);
-}
+    background: linear-gradient(135deg, #edaff87c, #ffd16679);
+    min-width: 314px;
+    }
 
 .navbar {
     background-color: var(--secondary);
@@ -74,7 +80,12 @@ a {
 }
 
 .hero {
-    height: 90vh;
+    height: 90vh; /* Mantém a altura da seção Hero */
+    min-height: 575px;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Garante que o swiper fique dentro do hero */
+    overflow: hidden; /* Impede que elementos ultrapassem os limites */
 }
 
 .custom-title {
@@ -83,7 +94,7 @@ a {
     line-height: 1.2;
     margin: 20px; 
     font-family: var(--font-secondary);
-    font-weight: normal; /* Corrigido de font-weight: 400px para normal */
+    font-weight: normal; 
     font-size: var(--font-size-h2);
 }
 
@@ -101,8 +112,11 @@ a {
 
 .swiper {
     width: 90%;
-    max-width: 600px;
-    height: 500px;
+    max-width: 1000px;
+    height: 60vh;
+    min-height: 380px;
+    max-height: calc(90vh - 40px);
+    margin: auto;
 }
 
 .swiper-slide {
@@ -136,7 +150,7 @@ a {
     transition: 0.3s;
     font-size: var(--font-size-btn);
     text-transform: uppercase;
-    font-weight: normal; /* Garantir que o texto não fique em negrito */
+    font-weight: normal;
 }
 
 .btn:hover {
@@ -164,6 +178,10 @@ a {
     padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.about-img {
+    display: none;
 }
 
 h2 {
@@ -212,6 +230,12 @@ p {
     font-weight: normal; /* Garantir que o texto não fique em negrito */
 }
 
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    cursor: pointer;
+}
+
 .services {
     margin: 20px;
 }
@@ -235,6 +259,12 @@ h3 {
     justify-content: center; /* Alinha os itens no centro verticalmente */
     text-align: center; /* Garante que o texto fique centralizado */
     margin-bottom: 20px; /* Espaço entre os serviços */
+    border-bottom: 1px solid black;
+    padding-bottom: 36px;
+}
+
+.service-item:last-child {
+    border-bottom: none;
 }
 
 .btn-primary {
@@ -253,11 +283,20 @@ h3 {
     font-weight: normal; /* Garantir que o texto não fique em negrito */
 }
 
+.btn-primary:hover {
+    background-color: var(--secondary);
+    color:var(--white);
+    cursor: pointer;
+}
+
 .contact-us {
     display: flex;
     flex-direction: column;
     padding: 20px;
     background-color: var(--secondary);
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .whats {
@@ -293,6 +332,46 @@ h3 {
     width: 80px;
 }
 
+.media-icon:hover {
+    border: 1px solid var(--primary);
+    
+}
+
+#s-m {
+    margin: auto;
+    max-width: 1400px;
+    width: 60%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#s-m a {
+    display: inline-flex;
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary);
+    color: var(--dark);
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+#s-m a:hover {
+    background: var(--white);
+}
+
+#s-m a i {
+    transition: 0.4s all;
+}
+
+#s-m a:hover > i {
+    transform: scale(1.6) rotate(25deg);
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -306,14 +385,149 @@ footer {
 
 h4 {
     font-size: var(--font-size-footer);
-    font-weight: normal; /* Garantir que o texto não fique em negrito */
+    font-weight: normal; 
 }
 
 footer a {
     color: var(--secondary);
 }
 
-@media screen and (min-width: 768px) {
+/* PÁGINA SOBRE */
+
+.about-img-contact {
+    display: none;
+}
+
+/* PÁGINA SERVIÇOS */
+
+.mySwiperServices {
+    width: 90%;
+    max-width: 1000px;
+    height: 60vh;
+    min-height: 380px;
+    max-height: calc(90vh - 40px);
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+.mySwiperServices .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.mySwiperServices .btn-container {
+    display: none;
+}
+
+.service-page {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-page h2 {
+    margin: 20px;
+}
+
+.service-page hr {
+    margin: 20px;
+    width: 52px;
+}
+
+.service-item-page h3 {
+    text-align: left;
+    margin: 18px;
+}
+
+.service-item-page p {
+    margin: 18px;
+}
+
+.btn-primary-service {
+    display: flex;
+    justify-content: center;
+    padding: 14px 10px;
+    margin: 18px auto;
+    background-color: var(--secondary);
+    color: var(--dark);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: var(--font-size-btn);
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.btn-primary-service:hover {
+    background-color: var(--primary);
+}
+
+/* CONTACT PAGE */
+
+.contact-us-page {
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px;
+    height: 85vh;
+}
+
+
+
+.media-icon-contact-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.media-icon-contact-page img {
+    height: 80px;
+    width: 80px;
+}
+
+
+#s-m-r {
+    margin: 0px;
+    max-width: 1400px;
+    width: 60%;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#s-m-r a {
+    display: inline-flex;
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary);
+    color: var(--dark);
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+#s-m-r a:hover {
+    background: var(--secondary);
+}
+
+#s-m-r a i {
+    transition: 0.4s all;
+}
+
+#s-m-r a:hover > i {
+    transform: scale(1.6) rotate(25deg);
+}
+
+/* MEDIAS QUERIES */
+
+@media screen and (min-width: 481px) {
     header {
         background-color: var(--secondary);
     }
@@ -323,14 +537,193 @@ footer a {
         margin: auto;
     }
 
+    .menu {
+        gap: 30px;
+    }
+
     .custom-title {
         max-width:1000px;
-        margin: 18px auto;
+        width: calc(100% - 36px); /* 100% da tela menos 18px de margem em cada lado */
+        margin: 18px auto; /*manter centralizado */
         font-size: 48px;
     }
 
     .swiper {
         max-width: 1000px;
-        height: 70vh;
+        max-height: 750px;
+        width: 95%;
+        margin: 18px;
     }
+
+    .hero {
+        height: 60vh;
+        min-height: 700px;
+        max-height: 750px;
+    }
+
+    .about-us {
+        max-width: 1000px;
+        width: 100%;
+        min-height: 70vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-us button {
+        margin-top: auto; /* Empurra o botão para o final */
+        margin-bottom: 8px; /* Garante o espaçamento do final */
+        align-self: center; /* Centraliza horizontalmente */
+    }
+
+    .about-us h2 {
+        margin: 18px 0;
+       }
+    
+       .about-us hr {
+        margin: 18px 0;
+       }
+
+    .services h2, hr {
+        display: grid;
+        grid-column: 1 / 3;
+        margin: 18px;
+    }
+
+    .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+            gap: 24px; /* Espaçamento entre os itens */
+            justify-content: center; /* Centraliza os itens */
+            align-items: start; /* Alinha os itens no topo */
+            max-width: 1000px;
+            margin: auto;
+        }
+
+    .service-item hr {
+        margin: 0 18px;
+    }
+
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px;
+        background-color: ;
+    }
+
+    .service-item {
+        border-bottom: none;
+    }
+
+
+    h4 {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .menu {
+        gap: 55px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 24px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 36px !important;
+        background-size: 36px !important; 
+    }
+
+    .btn {
+        margin-top: 36px;
+        margin-bottom: 36px;
+        padding-bottom: 36px;
+    }
+
+    .about-us {
+        height: 80vh;
+        max-height:850px;
+    }
+
+    .p-img {
+        display: flex;
+    }
+
+    .about-img {
+        display: block;
+        width: 300px;
+        height: 250px;
+        border-radius: 50px 0 0 0;
+        object-fit: cover;
+        border: 1px solid var(--secondary);
+    }
+
+    .about-us p {
+        margin-right: 48px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    /* PÁGINA SOBRE */
+
+    .about-img-contact {
+        display: block;
+        width: 300px;
+        height: 550px;
+        border-radius: 50px 0 0 0;
+        object-fit: cover;
+        border: 1px solid var(--secondary);
+    }
+
+    #about-us-page {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    .hero {
+        margin-bottom: 18px;
+        height: 90vh;
+    }
+
+    .about-us {
+        height: 100vh;
+    }
+
+    a {
+        font-size: 24px;
+    }
+    
+    .hero {
+        margin-bottom: 18px;
+        height: 90vh;
+    }   
+
 }
