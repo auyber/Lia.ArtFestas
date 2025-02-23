@@ -650,9 +650,8 @@ header, footer {
     }
 
     .menu a {
-        padding: 05px 20px;
-        border-radius: 5px;
-        transition: all 0.3s ease-in-out;
+        padding: 05px 10px;
+
     }
 
     .custom-title {
