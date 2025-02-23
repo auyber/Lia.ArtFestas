@@ -105,7 +105,7 @@ a {
 }
 
 .menu a {
-    padding: 10px 2px;
+    padding: 06px 2px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -647,6 +647,12 @@ header, footer {
 
     .menu {
         gap: 30px;
+    }
+
+    .menu a {
+        padding: 05px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
     }
 
     .custom-title {
