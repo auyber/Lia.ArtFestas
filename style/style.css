@@ -12,6 +12,32 @@
     font-style: normal;
 }
 
+.croissant-one-regular {
+    font-family: "Croissant One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .henny-penny-regular {
+    font-family: "Henny Penny", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .crafty-girls-regular {
+    font-family: "Crafty Girls", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .finger-paint-regular {
+    font-family: "Finger Paint", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -78,6 +104,19 @@ a {
     text-decoration: none;
     color: var(--dark);
 }
+
+.menu a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    background-color: var(--primary); /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Leve aumento no tamanho */
+}
+
 
 .hero {
     height: 90vh; /* Mantém a altura da seção Hero */
@@ -318,6 +357,7 @@ h3 {
 .whats:hover {
     background-color: var(--white);
     color: var(--whats);
+    cursor: pointer;
 }
 
 .media-icon {
@@ -332,10 +372,6 @@ h3 {
     width: 80px;
 }
 
-.media-icon:hover {
-    border: 1px solid var(--primary);
-    
-}
 
 #s-m {
     margin: auto;
@@ -383,14 +419,21 @@ footer {
     text-align: center;
 }
 
-h4 {
+footer h4 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     font-size: var(--font-size-footer);
     font-weight: normal; 
 }
 
 footer a {
     color: var(--secondary);
+    font-size: var(--font-size-footer);
+    margin-left: 2px;
 }
+
 
 /* PÁGINA SOBRE */
 
@@ -403,7 +446,7 @@ footer a {
 .mySwiperServices {
     width: 90%;
     max-width: 1000px;
-    height: 60vh;
+    height: 90vh;
     min-height: 380px;
     max-height: calc(90vh - 40px);
     margin: auto;
@@ -413,7 +456,7 @@ footer a {
 .mySwiperServices .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     margin: auto;
 }
@@ -472,7 +515,7 @@ footer a {
     margin: auto;
     padding: 20px;
     max-width: 1000px;
-    height: 85vh;
+  
 }
 
 
@@ -569,20 +612,24 @@ footer a {
         display: flex;
         flex-direction: column;
     }
+
+    .about-us p {
+        margin-bottom: 120px;
+    }
     
     .about-us button {
-        margin-top: auto; /* Empurra o botão para o final */
-        margin-bottom: 8px; /* Garante o espaçamento do final */
-        align-self: center; /* Centraliza horizontalmente */
+        margin-top: auto; 
+        margin-bottom: 8px; 
+        align-self: center; 
     }
 
     .about-us h2 {
         margin: 18px 0;
-       }
+    }
     
-       .about-us hr {
+    .about-us hr {
         margin: 18px 0;
-       }
+    }
 
     .services h2, hr {
         display: grid;
@@ -593,15 +640,10 @@ footer a {
     .services {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
-            gap: 24px; /* Espaçamento entre os itens */
             justify-content: center; /* Centraliza os itens */
             align-items: start; /* Alinha os itens no topo */
             max-width: 1000px;
             margin: auto;
-        }
-
-    .service-item hr {
-        margin: 0 18px;
     }
 
     .service-item {
@@ -609,7 +651,6 @@ footer a {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 16px;
         background-color: ;
     }
 
@@ -636,6 +677,7 @@ footer a {
 
     .btn {
         font-size: 24px;
+        margin-bottom: 18px;
     }
 
     .swiper-pagination-bullet {
@@ -656,15 +698,6 @@ footer a {
         background-size: 36px !important; 
     }
 
-    .btn {
-        margin-bottom: 18px;
-    }
-
-    .about-us {
-        height:60vh;
-        max-height:600px;
-    }
-
     .p-img {
         display: flex;
     }
@@ -680,12 +713,31 @@ footer a {
 
     .about-us p {
         margin-right: 48px;
+        margin-bottom: 36px;
+    }
+
+    about-us-page {
+        height: 1000px;
     }
 
     footer {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 5px;
+    }
+
+    footer h4 {
+        font-size: 18px;
+    }
+
+    footer a {
+        font-size: 18px;
+    }
+
+    .footer-contact {
+        margin-top: 72px;
     }
 
     /* PÁGINA SOBRE */
@@ -699,8 +751,8 @@ footer a {
         border: 1px solid var(--secondary);
     }
 
-    #about-us-page {
-        height: 100vh;
+    .mySwiperServices {
+        height: 60vh;
     }
 
 }
@@ -709,10 +761,6 @@ footer a {
     .hero {
         margin-bottom: 18px;
         height: 90vh;
-    }
-
-    .about-us {
-        height: 100vh;
     }
 
     a {
