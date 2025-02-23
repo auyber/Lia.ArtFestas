@@ -5,30 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lia Art Festas</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css?v=1.0.0">
+    <script src="index.js" defer></script>
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="index.js" defer></script>
     
     <!-- Fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
 
-  <script src="https://kit.fontawesome.com/8ad9c7b358.js" crossorigin="anonymous"></script>
-
-
-
+    <script src="https://kit.fontawesome.com/8ad9c7b358.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-
         <nav class="navbar">
             <a href="index.html" class="icone">
-              <div class="logo"><img src="images/logolia.png" alt="Logo" srcset="">
-            </a></div>
+              <div class="logo"><img src="images/logolia.png" alt="Logo"></div>
+            </a>
             <ul class="menu">
                 <li><a href="index.html">início</a></li>
                 <li><a href="pages/about.html">sobre</a></li>
@@ -36,138 +34,157 @@
                 <li><a href="pages/contact.html">contato</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-
-        <section class="hero">
-            <div>
-                <h1 class="custom-title">
-                    <span class="left">Personalize,</span>
-                    <span class="center">Supreenda</span>
-                    <span class="right">e Encante!</span>
-                </h1>
-            </div>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <!-- Slide 1 -->
-                  <div class="swiper-slide">
-                    <img src="images/geral.jpg" alt="imagem com chapéu de festa, hambúrguer, pratos, confetes e frase happy birthday em uma superfície plana">
-                    <div class="btn-container">
-                      <a href="pages/services.html" class="btn">Saiba Mais</a>
-                    </div>
-                  </div>
-                  <!-- Slide 2 -->
-                  <div class="swiper-slide">
-                    <img src="images/decoracao-2-urso-completo.jpeg" alt="decoração de festa, com ursos de pelúcia, um deles segurando vários balões, de fundo temos uma mesa com enfeite de bolo, e um arco de balão em volta. Os balões são bege escuro e vários tons de azuis">
-                    <div class="btn-container">
-                      <a href="pages/services.html" class="btn">Saiba Mais</a>
-                    </div>
-                  </div>
-                  <!-- Slide 3 -->
-                  <div class="swiper-slide">
-                    <img src="images/balao-1-ursinho.jpeg" alt="arco de balões para enfeitar festas">
-                    <div class="btn-container">
-                      <a href="pages/services.html" class="btn">Saiba Mais</a>
-                    </div>
-                  </div>
-                  <!-- Slide 4 -->
-                  <div class="swiper-slide">
-                    <img src="images/brinquedo-1-cama-elastica.jpeg" alt="2 camas elásticas montadas em um local com grama">
-                    <div class="btn-container">
-                      <a href="pages/services.html" class="btn">Saiba Mais</a>
-                    </div>
-                  </div>
-                  <!-- Slide 5 -->
-                  <div class="swiper-slide">
-                    <img src="images/cesta-1-torrone-girassol.jpeg" alt="cesta para presentear, com girassol, torrone e muitas coisas gostosas de comer">
-                    <div class="btn-container">
-                      <a href="pages/services.html" class="btn">Saiba Mais</a>
-                    </div>
-                  </div>
+      <section class="hero">
+        <div>
+          <h1 class="custom-title">
+            <span class="left" data-aos="fade-down" data-aos-delay="100">Personalize,</span>
+            <span class="center" data-aos="fade-down" data-aos-delay="200">Supreenda</span>
+            <span class="right" data-aos="fade-down" data-aos-delay="300">e Encante!</span>
+        </h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <img src="images/geral.jpg" alt="imagem com chapéu de festa, hambúrguer, pratos, confetes e frase happy birthday em uma superfície plana" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="btn-container" data-aos="fade-up" data-aos-delay="300">
+                  <a href="pages/services.html" class="btn">Saiba Mais</a>
                 </div>
-            
-                <!-- Botões de navegação -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            
-                <!-- Paginação -->
-                <div class="swiper-pagination"></div>
               </div>
-        </section>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <img src="images/decoracao-2-urso-completo.jpeg" alt="decoração de festa, com ursos de pelúcia, um deles segurando vários balões, de fundo temos uma mesa com enfeite de bolo, e um arco de balão em volta. Os balões são bege escuro e vários tons de azuis" >
+                <div class="btn-container">
+                  <a href="pages/services.html" class="btn">Saiba Mais</a>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <img src="images/balao-1-ursinho.jpeg" alt="arco de balões para enfeitar festas">
+                <div class="btn-container">
+                  <a href="pages/services.html" class="btn">Saiba Mais</a>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <img src="images/brinquedo-1-cama-elastica.jpeg" alt="2 camas elásticas montadas em um local com grama">
+                <div class="btn-container">
+                  <a href="pages/services.html" class="btn">Saiba Mais</a>
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <img src="images/cesta-1-torrone-girassol.jpeg" alt="cesta para presentear, com girassol, torrone e muitas coisas gostosas de comer">
+                <div class="btn-container">
+                  <a href="pages/services.html" class="btn">Saiba Mais</a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Botões de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+          </div>
+      </section>
 
         <section class="about-us">
-            <h2>Sobre nós</h2>
-            <hr class="title-hr">
+            <h2 data-aos="fade-down">Sobre nós</h2>
+            <hr class="title-hr" data-aos="fade-down" data-aos-delay="200">
             <div class="p-img">
-              <p>A Lia.artfestas transforma sonhos em realidade com decorações incríveis para festas e eventos. Oferecemos soluções completas, do planejamento à montagem, garantindo um ambiente encantador e personalizado para aniversários, casamentos, batizados e muito mais.
-              <br>Nosso compromisso é criar experiências inesquecíveis, com qualidade, criatividade e o melhor custo-benefício.</p>
-              <img class="about-img" src="images/decoracao-4-urso-aviao.jpeg" alt="decoração de festas, com um urso aviador">
+              <p data-aos="fade-right" data-aos-duration="1000">A Lia.artfestas transforma sonhos em realidade com decorações incríveis para festas e eventos. Oferecemos soluções completas, do planejamento à montagem, garantindo um ambiente encantador e personalizado para aniversários, casamentos, batizados e muito mais.
+                <br>Nosso compromisso é criar experiências inesquecíveis, com qualidade, criatividade e o melhor custo-benefício.</p>
+              <img class="about-img" src="images/decoracao-4-urso-aviao.jpeg" alt="decoração de festas, com um urso aviador" data-aos="fade-left" data-aos-duration="1000">
             </div>
-            <a href="pages/about.html"><button class="btn-secondary">Saiba mais</button></a>
+            <a href="pages/about.html" data-aos="fade-up" data-aos-delay="300">
+              <button class="btn-secondary">Saiba mais</button>
+            </a>
         </section>
 
         <section class="services">
-            <h2>Serviços</h2>
-            <hr class="title-hr">
-            <article class="service-item">
-                <img src="images/decoracao-5-divertidamente.jpeg" alt="decorações de festas com enfeites do divertidamente">
-                <h3>Decorações para Festas</h3>
-                <p>Ambientes incríveis para seus momentos inesquecíveis!</p>
-                <a href="pages/services.html"><button class="btn-primary">Saiba mais</button></a>
+            <h2 data-aos="fade-down">Serviços</h2>
+            <hr class="title-hr" data-aos="fade-down" data-aos-delay="200">
+            
+            <article class="service-item" data-aos="zoom-in" data-aos-delay="100">
+              <img src="images/decoracao-5-divertidamente.jpeg" alt="decorações de festas com enfeites do divertidamente">
+              <h3>Decorações para Festas</h3>
+              <p>Ambientes incríveis para seus momentos inesquecíveis!</p>
+              <a href="pages/services.html"><button class="btn-primary">Saiba mais</button></a>
             </article>
             
-            <article class="service-item">
-                <img src="images/balao-4-passaro.jpeg" alt="foto de balões coloridos decorando o local com alguns enfeites de passáros">
-                <h3>Balões Personalizados</h3>
-                <p>Transforme qualquer ocasião com cores e criatividade!</p>
-                <a href="pages/services.html#baloes"><button class="btn-primary">Saiba mais</button></a>
+            <article class="service-item" data-aos="flip-left" data-aos-delay="300">
+              <img src="images/balao-4-passaro.jpeg" alt="foto de balões coloridos decorando o local com alguns enfeites de passáros">
+              <h3>Balões Personalizados</h3>
+              <p>Transforme qualquer ocasião com cores e criatividade!</p>
+              <a href="pages/services.html#baloes"><button class="btn-primary">Saiba mais</button></a>
             </article>
 
-            <article class="service-item">
-                <img src="images/brinquedo-1-cama-elastica.jpeg" alt="foto de brinquedos para festas, são duas camas elásticas montadas em um local com grama">
-                <h3>Brinquedos para Festas</h3>
-                <p>Diversão garantida para todas as idades!</p>
-                <a href="pages/services.html#brinquedos"><button class="btn-primary">Saiba mais</button></a>
+            <article class="service-item" data-aos="flip-left" data-aos-delay="300">
+              <img src="images/brinquedo-1-cama-elastica.jpeg" alt="foto de brinquedos para festas, são duas camas elásticas montadas em um local com grama">
+              <h3>Brinquedos para Festas</h3>
+              <p>Diversão garantida para todas as idades!</p>
+              <a href="pages/services.html#brinquedos"><button class="btn-primary">Saiba mais</button></a>
             </article>
-            <article class="service-item">
-                <img src="images/cesta-3.jpeg" alt="foto de cesta personalizadas para presentes, cheia de coisas dentro">
-                <h3>Cestas Personalizadas</h3>
-                <p>Presenteie com carinho, monte do seu jeito!</p>
-                <a href="pages/services.html#cestas"><button class="btn-primary">Saiba mais</button></a>
+
+            <article class="service-item" data-aos="zoom-in" data-aos-delay="400">
+              <img src="images/cesta-3.jpeg" alt="foto de cesta personalizadas para presentes, cheia de coisas dentro">
+              <h3>Cestas Personalizadas</h3>
+              <p>Presenteie com carinho, monte do seu jeito!</p>
+              <a href="pages/services.html#cestas"><button class="btn-primary">Saiba mais</button></a>
             </article>
         </section>
         
         <section class="contact-us">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <h2>Entre em contato</h2>
                 <hr class="title-hr">
                 <p>Precisa de algo especial?
                 <br>Chame a gente no WhatsApp!</p>
-                <a href="https://wa.me/5521982076625" target="_blank"><button class="whats" aria-label="Fale conosco no WhatsApp">WhatsApp</button></a>
+                <a href="https://wa.me/5521982076625" target="_blank" data-aos="zoom-out" data-aos-delay="300">
+                  <button class="whats">WhatsApp</button>
+                </a>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1000">
                 <h2>Redes Sociais</h2>
                 <hr class="title-hr">
                 <p>Acompanhe nossas novidades e inspirações!</p>
                 <div class="media-icon" id="s-m">
-                  <a href="https://www.facebook.com/liascoiffeur" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/lia.artfestas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/liascoiffeur" target="_blank" data-aos="pulse" data-aos-delay="400">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lia.artfestas/" target="_blank" data-aos="pulse" data-aos-delay="500">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </div>
             </div>
         </section>
-          
     </main>
 
     <footer>
-        <h4>© Todos os direitos reservados. Lia Art Festas 2024 |</h4>
-        <h4>Criação de Sites by<a href="https://www.linkedin.com/in/auyber-genesini-moura-58b258144/" target="_blank" aria-label="Entre em contato com o criador do site através do Linkedin"> Auyber Genesini Moura</a>.</h4>
-    </footer>
+      <h4>© Todos os direitos reservados. Lia Art Festas 2024 |</h4>
+      <h4>Criação de Sites by<a href="https://www.linkedin.com/in/auyber-genesini-moura-58b258144/" target="_blank" aria-label="Entre em contato com o criador do site através do Linkedin"> Auyber Genesini Moura</a>.</h4>
+  </footer>
 
-    <a href="https://wa.me/5521982076625" target="_blank" class="whatsapp-button">
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5521982076625" target="_blank" class="whatsapp-button" data-aos="zoom-out" data-aos-anchor-placement="top-center">
       <img src="images/whatsapp.svg" alt="WhatsApp">
-  </a>
-  <div class="whatsapp-text">Solicite <br> seu Orçamento</div>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out'
+      });
+    </script>
+    
 </body>
 </html>

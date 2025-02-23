@@ -506,6 +506,8 @@ header, footer {
     display: none;
 }
 
+
+
 /* PÁGINA SERVIÇOS */
 
 .mySwiperServices {
@@ -727,6 +729,18 @@ header, footer {
         font-size: 18px;
     }
 
+    /* ABOUT PAGE */
+    #about-us-page p {
+        margin-bottom: 200px;
+    }
+
+    /* CONTACT PAGE */
+
+    .footer-contact {
+        margin-top: 72px;
+        position: relative;
+        bottom: 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
