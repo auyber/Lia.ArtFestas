@@ -12,32 +12,6 @@
     font-style: normal;
 }
 
-.croissant-one-regular {
-    font-family: "Croissant One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .henny-penny-regular {
-    font-family: "Henny Penny", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .crafty-girls-regular {
-    font-family: "Crafty Girls", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .finger-paint-regular {
-    font-family: "Finger Paint", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -117,7 +91,6 @@ a {
     transform: scale(1.1); /* Leve aumento no tamanho */
 }
 
-
 .hero {
     height: 90vh; /* Mantém a altura da seção Hero */
     min-height: 575px;
@@ -187,8 +160,6 @@ button {
 button:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
-
-
 
 .btn {
     display: inline-block;
@@ -383,7 +354,6 @@ h3 {
     width: 80px;
 }
 
-
 #s-m {
     margin: auto;
     max-width: 1400px;
@@ -470,7 +440,6 @@ header, footer {
 
 .whatsapp-button:hover {
     transform: scale(1.1);
-
 }
 
 .whatsapp-button img {
@@ -505,8 +474,6 @@ header, footer {
 .about-img-contact {
     display: none;
 }
-
-
 
 /* PÁGINA SERVIÇOS */
 
@@ -581,23 +548,18 @@ header, footer {
     margin: auto;
     padding: 20px;
     max-width: 1000px;
-  
 }
-
-
 
 .media-icon-contact-page {
     display: flex;
     flex-direction: row;
     justify-content: left;
-
 }
 
 .media-icon-contact-page img {
     height: 80px;
     width: 80px;
 }
-
 
 #s-m-r {
     margin: 0px;
@@ -712,9 +674,9 @@ header, footer {
 
     .services {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
-            justify-content: center; /* Centraliza os itens */
-            align-items: start; /* Alinha os itens no topo */
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: start;
             max-width: 1000px;
             margin: auto;
     }
@@ -730,7 +692,6 @@ header, footer {
     .service-item {
         border-bottom: none;
     }
-
 
     h4 {
         font-size: 18px;
@@ -801,6 +762,8 @@ header, footer {
         margin-bottom: 36px;
     }
 
+    /* PAGE ABOUT US */
+
     about-us-page {
         height: 1000px;
     }
@@ -821,12 +784,6 @@ header, footer {
         font-size: 18px;
     }
 
-    .footer-contact {
-        margin-top: 72px;
-    }
-
-    /* PÁGINA SOBRE */
-
     .about-img-contact {
         display: block;
         width: 300px;
@@ -838,6 +795,12 @@ header, footer {
 
     .mySwiperServices {
         height: 60vh;
+    }
+
+    /* PAGE CONTACT */
+
+    .footer-contact {
+        margin-top: 72px;
     }
 
 }
