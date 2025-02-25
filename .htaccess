@@ -1,13 +1,13 @@
 # Habilita a reescrita de URL
 RewriteEngine On
 
-# Remove o .html das URLs
+# Remove .html das URLs (por exemplo: /about para /about.html)
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ /pages/$1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
 
-# Redireciona URLs antigas (com .html) para URLs sem .html
+# Redireciona URLs antigas para URLs limpas
 RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^pages/about\.html$ /about [R=301,L]
-RewriteRule ^pages/services\.html$ /services [R=301,L]
-RewriteRule ^pages/contact\.html$ /contact [R=301,L]
+RewriteRule ^about$ /pages/about.html [R=301,L]
+RewriteRule ^services$ /pages/services.html [R=301,L]
+RewriteRule ^contact$ /pages/contact.html [R=301,L]
